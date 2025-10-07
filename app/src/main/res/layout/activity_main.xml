@@ -9,7 +9,7 @@
     android:background="@drawable/fondo_app">
 
     <ImageView
-        android:id="@+id/imagenIcono"
+        android:id="@+id/imgIconoLg"
         android:layout_width="250dp"
         android:layout_height="210dp"
         app:layout_constraintTop_toTopOf="parent"
@@ -20,7 +20,7 @@
         android:adjustViewBounds="true"/>
 
     <TextView
-        android:id="@+id/textoTitulo"
+        android:id="@+id/txtLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login"
@@ -33,7 +33,7 @@
         android:layout_marginStart="125dp"/>
 
     <EditText
-        android:id="@+id/textoNombre"
+        android:id="@+id/txtNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
@@ -48,7 +48,7 @@
         android:layout_marginEnd="30dp"/>
 
     <EditText
-        android:id="@+id/textoCorreo"
+        android:id="@+id/txtCorreo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
@@ -63,7 +63,7 @@
         android:layout_marginEnd="30dp"/>
 
     <EditText
-        android:id="@+id/textoPass"
+        android:id="@+id/txtPass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
@@ -104,7 +104,7 @@
         android:layout_marginTop="580dp"/>
 
     <TextView
-        android:id="@+id/textoRedes"
+        android:id="@+id/txtRedes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sing up using"
