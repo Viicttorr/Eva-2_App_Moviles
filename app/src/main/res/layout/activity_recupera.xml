@@ -90,9 +90,24 @@
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"/>
 
+    <EditText
+        android:id="@+id/txtCfNvPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:hint="Confirma Nueva Contraseña"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColorHint="#888888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="610dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"/>
+
     <ImageButton
         android:id="@+id/btnBack"
-        android:layout_width="150dp"
+        android:layout_width="200dp"
         android:layout_height="150dp"
         android:scaleType="centerInside"
         android:adjustViewBounds="true"
@@ -100,8 +115,8 @@
         android:src="@drawable/boton_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="600dp"/>
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="650dp"/>
 
     <ImageButton
         android:id="@+id/btnSend"
@@ -113,8 +128,8 @@
         android:src="@drawable/boton_send"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="230dp"
-        android:layout_marginTop="600dp"/>
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="650dp"/>
 
 
 

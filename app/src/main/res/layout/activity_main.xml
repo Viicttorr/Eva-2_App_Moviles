@@ -33,21 +33,6 @@
         android:layout_marginStart="125dp"/>
 
     <EditText
-        android:id="@+id/txtNombre"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFFFFF"
-        android:hint="Nombre"
-        android:inputType="textPersonName"
-        android:padding="12dp"
-        android:textColorHint="#888888"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="400dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"/>
-
-    <EditText
         android:id="@+id/txtCorreo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -58,7 +43,7 @@
         android:textColorHint="#888888"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="470dp"
+        android:layout_marginTop="400dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"/>
 
@@ -73,7 +58,7 @@
         android:textColorHint="#888888"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="540dp"
+        android:layout_marginTop="470dp"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"/>
 
@@ -88,7 +73,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginStart="190dp"
-        android:layout_marginTop="580dp"/>
+        android:layout_marginTop="510dp"/>
 
     <ImageButton
         android:id="@+id/btnForgot"
@@ -101,7 +86,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="580dp"/>
+        android:layout_marginTop="510dp"/>
+
+    <ImageButton
+        android:id="@+id/btnSingup"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/boton_singup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="600dp"/>
 
     <TextView
         android:id="@+id/txtRedes"

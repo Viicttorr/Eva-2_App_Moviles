@@ -24,5 +24,9 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, RecuperaClave::class.java)
             startActivity(intent)
         }
+        findViewById<ImageButton>(R.id.btnSingup).setOnClickListener {
+            val intent = Intent(this, RegistraCuenta::class.java)
+            startActivity(intent)
+        }
     }
 }
