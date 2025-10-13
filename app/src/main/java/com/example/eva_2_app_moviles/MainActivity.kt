@@ -9,6 +9,7 @@ import android.content.Intent
 import android.widget.ImageButton
 import android.widget.Toast
 import android.view.View
+import android.app.AlertDialog
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,6 +28,26 @@ class MainActivity : AppCompatActivity() {
         findViewById<ImageButton>(R.id.btnSingup).setOnClickListener {
             val intent = Intent(this, RegistraCuenta::class.java)
             startActivity(intent)
+        }
+        val boton = findViewById<ImageButton>(R.id.btnLogin)
+        boton.setOnClickListener {
+            AlertDialog.Builder(this)
+                .setMessage("Usuario Conectado Exitosamente")
+                .show()
+        }
+        var btoothActivo = false
+        val toggleBtn = findViewById<ImageButton>(R.id.btn_Bth)
+
+        toggleBtn.setOnClickListener {
+            btoothActivo = !btoothActivo
+
+            if (btoothActivo) {
+                toggleBtn.setImageResource(R.drawable.btoo_on)
+                Toast.makeText(this, "Bluetooth activado", Toast.LENGTH_SHORT).show()
+            } else {
+                toggleBtn.setImageResource(R.drawable.btoo_off)
+                Toast.makeText(this, "Bluetooth desactivado", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }

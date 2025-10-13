@@ -9,6 +9,7 @@ import android.content.Intent
 import android.widget.ImageButton
 import android.widget.Toast
 import android.view.View
+import android.app.AlertDialog
 
 class RecuperaClave : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +24,12 @@ class RecuperaClave : AppCompatActivity() {
         findViewById<ImageButton>(R.id.btnBack).setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+        }
+        val boton = findViewById<ImageButton>(R.id.btnSend)
+        boton.setOnClickListener {
+            AlertDialog.Builder(this)
+                .setMessage("Cuenta Recuperada Exitosamente")
+                .show()
         }
     }
 }

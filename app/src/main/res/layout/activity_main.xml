@@ -8,6 +8,19 @@
     tools:context=".MainActivity"
     android:background="@drawable/fondo_app">
 
+    <ImageButton
+        android:id="@+id/btn_Bth"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/btoo_off"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="10dp"/>
+
     <ImageView
         android:id="@+id/imgIconoLg"
         android:layout_width="250dp"

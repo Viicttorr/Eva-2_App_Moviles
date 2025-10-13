@@ -9,6 +9,7 @@ import android.content.Intent
 import android.widget.ImageButton
 import android.widget.Toast
 import android.view.View
+import android.app.AlertDialog
 
 class RegistraCuenta : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +24,12 @@ class RegistraCuenta : AppCompatActivity() {
         findViewById<ImageButton>(R.id.btnBackRg).setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+        }
+        val boton = findViewById<ImageButton>(R.id.btnSingup)
+        boton.setOnClickListener {
+            AlertDialog.Builder(this)
+                .setMessage("Usuario Registrado Exitosamente")
+                .show()
         }
     }
 }
